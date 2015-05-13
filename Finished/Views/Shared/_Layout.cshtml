@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewBag.Title - Tweens2Teens</title>
+  
+
+    
+   
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <script src="~/Scripts/JavaScript.js"></script>
+</head>
+<body>
+
+    <div>
+
+        <div class="container-fluid">
+            <div class="header clearfix">
+                <nav>
+                    <ul class="nav nav-pills">
+                        <li  id="main">
+                        <a href="~/Views/Home/Index.cshtml">Home</a></li>
+                        <li  id="pen"><a href="PenPal.aspx">Pen Pal Login</a></li>
+                        <li id="tween">
+                        <a href="~/Views/Home/Tweens.cshtml">Tweens</a></li>
+                        <li  id="teen"><a href="Application.aspx">Teens Sign Up!</a></li>
+                    </ul>
+                </nav>
+                <h3 class="text-muted">
+                    <img src="~/Pics/logo_1616033_web.jpg" class="logo" /></h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        @RenderBody()
+        <hr />
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="Default.aspx">Home</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="Privacy.aspx">Privacy Policy</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                        <p class="copyright text-muted small">Copyright &copy; Tweens2Teens 2015. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
