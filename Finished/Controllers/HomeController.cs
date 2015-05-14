@@ -13,14 +13,14 @@ namespace Finished.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Teen()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Tweens()
         {
             ViewBag.Message = "Your contact page.";
 

@@ -9,16 +9,13 @@
 
     }
 
-    if (filename == "Default.aspx")
+    if (filename == "Index.cshtml")
         document.getElementById("main").setAttribute("class", "active");
-    else if (filename == "PenPal.aspx")
-        document.getElementById("pen").setAttribute("class", "active");
-    else if (filename == "KidApp.aspx")
+    else if (filename == "Tweens.cshtml")
         document.getElementById("tween").setAttribute("class", "active");
-    else if (filename == "Application.aspx")
+    else if (filename == "Teen.cshtml")
         document.getElementById("teen").setAttribute("class", "active");
-    else if (filename == "Become.aspx")
-        document.getElementById("be").setAttribute("class", "active");
+   
 
     else document.getElementById("main").setAttribute("class", "active");
 
