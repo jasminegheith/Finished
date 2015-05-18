@@ -426,7 +426,7 @@ cite {
 }
 
 .text-muted {
-  color: #999999;
+ padding:10px;
 }
 
 .text-primary {
@@ -784,8 +784,9 @@ pre code {
 }
 
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+    margin-left:0px;
+    margin-right:0px;
+
 }
 
 .row:before,
@@ -1967,8 +1968,7 @@ textarea.input-lg {
 }
 
 .form-horizontal .form-group {
-  margin-right: -15px;
-  margin-left: -15px;
+ 
 }
 
 .form-horizontal .form-group:before,

@@ -11,7 +11,7 @@ body {
 
 
 .form-group{
-    text-align:center;
+    
     color:blue;
 
 }
@@ -36,17 +36,12 @@ body {
 }
 
 
-.footer {
-  position: sticky;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 20px;
- text-align:left;
-}
 
 #try{ 
     background-color:white;
+}
+.logo{
+    padding:5px;
 }
 
 
@@ -58,7 +53,7 @@ body {
 
 .container {
   width: auto;
-  max-width: 680px;
+ 
   padding: 0 15px;
 }
 .container .text-muted {
@@ -75,6 +70,7 @@ body {
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
   margin-bottom: 10px;
+  text-align:left;
 }
 .form-signin .checkbox {
   font-weight: normal;
@@ -398,4 +394,52 @@ p.copyright {
 ::-webkit-scrollbar-thumb {
     border-radius: 20px;
     -webkit-box-shadow: inset 0 0 6px dodgerblue; 
+}
+
+.BTNCLASS2{
+    color:white;
+    font-family:'Buxton Sketch';
+    font-size:xx-large;
+    text-align:center;
+}
+a:hover{
+    
+    color:white;
+}
+
+.no{
+    color:red;
+}
+
+footer{
+    clear:both;
+    
+}
+#addPad {
+    margin-bottom:15%;
+}
+#inputbox {
+    margin-bottom:3%;
+}
+
+.checkbox{
+    text-align:left;
+}
+
+.regbut{
+    color:black;
+}
+
+#check{
+    color:black;
+    
+}
+.form-horizontal .form-group {
+margin-left: 0;
+margin-right: 0;
+
+}
+
+#regbutton{
+   
 }

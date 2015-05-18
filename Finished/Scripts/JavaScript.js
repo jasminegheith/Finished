@@ -11,10 +11,10 @@
 
     if (filename == "Index.cshtml")
         document.getElementById("main").setAttribute("class", "active");
-    else if (filename == "Tweens.cshtml")
-        document.getElementById("tween").setAttribute("class", "active");
-    else if (filename == "Teen.cshtml")
-        document.getElementById("teen").setAttribute("class", "active");
+    else if (filename == "Register.cshtml")
+        document.getElementById("reg").setAttribute("class", "active");
+    else if (filename == "Login.cshtml")
+        document.getElementById("log").setAttribute("class", "active");
    
 
     else document.getElementById("main").setAttribute("class", "active");
@@ -23,15 +23,25 @@
 
 
 var a = [
-"animated", "blushing", "fuzzy", "barking", "cloudy", "dopy", "enormous", "flawless", "flickering",
-"helpful", "infamous", "nervous", "optimistic", "powerful", "pushy", "smoggy", "scholarly",
-"tremendous", "uncommon", "waterlogged", "smelly", "red", "yellow", "blue", "green", "orange", "funny", "smart",
-"slimy", "angry", "upsetting", "startdazed", "hopeless", "honest", "computing"];
+"animated_", "blushing_", "fuzzy_", "barking_", "cloudy_", "dopey_", "enormous_", "flawless_", "flickering_",
+"helpful_", "infamous_", "nervous_", "optimistic_", "powerful_", "pushy_", "smoggy_", "scholarly_",
+"tremendous_", "uncommon_", "waterlogged_", "smelly_", "red_", "yellow_", "blue_", "green_", "orange_", "funny_", "smart_",
+"slimy_", "angry_", "upsetting_","hopeless_", "honest_", "computing_","funny_","cute_","awesome_","colorful_","sleepy_"];
 
 var b = ["bean", "chicken", "bear", "pear", "bubble", "pet", "kitten", "frog", "apple", "knight",
-"basket", "cat", "dog", "mouse", "snail", "tiger", "lion", "cheese", "potatoe", "bufflo", "car", "gym", "face",
-"closet", "room", "internet", "pool", "computer", "liger", "panda", "kite", "spaceship", "television"];
+"basket", "cat", "dog", "mouse", "snail", "tiger", "lion", "cheese", "potato", "buffalo", "car", "gym", "face",
+"closet", "room", "internet", "pool", "computer", "liger", "panda", "kite", "spaceship", "television", "phone", "ticket",
+"pie","pen","water","fish","duck","tablet","shoe","monster","paper","math","english","science","book","glasses"];
 
-var rA = Math.floor(Math.random() * a.length);
-var rB = Math.floor(Math.random() * b.length);
-var name = a[rA] + b[rB];
+var c = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+
+
+function nameGen() {
+    var rA = Math.floor(Math.random() * a.length);
+    var rB = Math.floor(Math.random() * b.length);
+    var rC = Math.floor(Math.random() * c.length);
+    var name = a[rA] + b[rB] + c[rC];
+    document.getElementById("userNameDisplay").innerHTML = name;
+    document.getElementById("uName").value = name;
+
+}

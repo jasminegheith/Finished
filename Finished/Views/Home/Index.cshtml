@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Tweens2Teens";
 }
 
 <a name="about"></a>
@@ -14,13 +14,12 @@
                     <hr class="intro-divider" />
                     <ul class="list-inline intro-social-buttons">
                         <li>
-                            <a href="KidApp.aspx" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Tween</span></a>
-                        </li>
+
+                        <li id="log" role="presentation">@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "BTNCLASS2" })</li>
+                        <li></li>
                         <li>
-                            <a href="Application.aspx" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Teen</span></a>
-                        </li>
-                        <li>
-                            <a href="PenPal.aspx" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Sign In</span></a>
+                            
+@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "BTNCLASS2" })
                         </li>
                     </ul>
                 </div>
@@ -45,8 +44,8 @@
                 <h2 class="section-heading">What is Tweens2Teens?</h2>
                 <p class="lead">
                     Tweens2Teens is a new website designed to bring "Tweens"(6th graders) and "Teens"(Young Adults in 12th grade-Freshman In College) together in an effort
-                    to help any child who feels they are alone or needs a mentor. They are able to communicat via messages within this site. Each message is stored
-                    on this website, and is monitored for any inaproprate activity. Each "Teen" is carefully selected and goes through a strict application process, so we can maintain safty for
+                    to help any child who feels they are alone or needs a mentor. They are able to communicate via messages within this site. Each message is stored
+                    on this website, and is monitored for any inappropriate activity. Each "Teen" is carefully selected and goes through a strict application process, so we can maintain safety for
                     each individual "Tween".
                 </p>
             </div>
@@ -92,7 +91,7 @@
                 <hr class="section-heading-spacer" />
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Should I give out my real name and email?</h2>
-                <p class="lead">NO! You should never give anybody your personal information. This means your real name, address, email, location or age. Tweens2Teens will NEVER ask for personal information!</p>
+                <p class="lead"> No! You should never give anybody your personal information. This means your real name, address, email, location or age. Tweens2Teens will NEVER ask for personal information!</p>
             </div>
             <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                 <img class="img-responsive" src="~/Pics/ProhibitionSign2.png" />
